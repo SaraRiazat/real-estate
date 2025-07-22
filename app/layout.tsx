@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { yekanFont } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Real Estate",
@@ -12,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
-        className={`antialiased`}
+        className={`${yekanFont.className} antialiased`}
       >
         {children}
       </body>

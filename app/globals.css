@@ -115,8 +115,23 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-weight: 200;
   }
+
   body {
     @apply bg-background text-foreground;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  button,
+  input,
+  textarea {
+    font-family: inherit;
   }
 }

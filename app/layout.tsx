@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { yekanFont } from "@/utils/fonts";
+import Layout from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
   title: "Real Estate",
@@ -17,7 +18,9 @@ export default function RootLayout({
       <body
         className={`${yekanFont.className} antialiased`}
       >
-        {children}
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );

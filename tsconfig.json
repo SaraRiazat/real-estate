@@ -42,8 +42,8 @@
       "@providers/*": [
         "providers/*"
       ],
-      "@module/*": [
-        "module/*"
+      "@models/*": [
+        "models/*"
       ]
     }
   },
